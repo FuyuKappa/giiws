@@ -4,6 +4,8 @@ This website was made by me in order to facilitate creation of and storing of in
 I previously made these using PowerPoint and it was slow, arduous, and prone to
 formatting errors and inconsistencies.
 
+**Currently, the site is not up and running as I will rewrite the entire thing to work off Jekyll.**
+
 ## Link
 !To be configured
 
