@@ -1,0 +1,88 @@
+<body class>
+	<div class="wrapper">
+	<div class="Title" style="font-size: 48px; color: white; margin-top:0.4em;">
+		<center>
+			
+				Version {{verFormat ver}}:<br>
+				Patches since last run for lim. 5-star characters
+			
+		</center>
+	</div>
+	<!-- Example -->
+	<div style="display: flex; flex-direction: row; margin-top:1%; width: 100%;">
+		<div style="width: 50%;">
+			<p class="howTo">
+				How to read:&nbsp&nbsp  
+			</p>
+		</div>
+		
+		<a href="/">
+			<div class="grey" style="float: left;">
+				<div class="charName">Eula</div>
+				<img src="./Portraits/Eula.png">
+				<hr class="divider">
+				<div class="patches"> 12 </div>
+				<hr class="divider">
+				<div class="lastRun"> V2.8 </div>
+				<hr class="divider">
+				<div class="runs"> 2 </div>
+			</div>
+		</a>
+		
+		<div style="width:50%;">
+			<p class="instructions" style="position: relative; top: 2%;">
+				-&nbsp <a style="color:white">Character name</a>
+			</p>
+			<p class="instructions" style="position:relative; top: 54%;">
+				-&nbsp <a style="color:white">Versions since last run</a>
+			</p>
+			<p class="instructions" style="position:relative; top: 58%;">
+				-&nbsp <a style="color:white">Version of last run</a>
+			</p>
+			<p class="instructions" style="position:relative; top: 60%;">
+				-&nbsp <a style="color:white">No. of previous appearances in banners<br>
+				(includes release banner)</a>
+			</p>
+		</div>
+	</div>
+	<!--END OF EXAMPLE-->
+	
+	<!-- GOLDEN ROW -->
+	<div class="goldenRow">
+		{{#each (getGold data)}}
+			<div class="golden">
+				<div class="charName">{{this.[0]}}</div>
+				<img src="./Portraits/{{this.[0]}}.png">
+				<hr class="divider">
+				<div class="patches">{{this.[1]}}</div>
+				<hr class="divider">
+				<div class="lastRun">{{#if (isBlank this.[2])}}V{{/if}}{{this.[2]}}</div>
+				<hr class="divider">
+				<div class="lastRun">{{this.[3]}}</div>
+				<hr class="divider">
+				<div class="remarks">{{this.[4]}}</div>
+			</div>
+		{{/each}}	
+	</div>
+	<div class="version"> 
+		Banners as of <u>V{{verFormat ver}}</u>
+	</div>
+	<!-- END OF GOLDEN ROW -->
+	
+	<!-- GREY TABLE -->
+	<div class="greyTable">
+		{{#each (getGrey data)}}
+			<div class="grey">
+				<div class="charName">{{this.[0]}}</div>
+				<img src="./Portraits/{{this.[0]}}.png"></img>
+				<hr class="divider">
+				<div class="patches">{{this.[1]}}</div>
+				<hr class="divider">
+				<div class="lastRun">V{{this.[2]}}</div>
+				<hr class="divider">
+				<div class="lastRun">{{this.[3]}}</div>
+			</div>
+		{{/each}}
+	</div>
+	</div>
+</body>
