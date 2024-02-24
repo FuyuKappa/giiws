@@ -5,7 +5,7 @@ I previously made these using PowerPoint and it was slow, arduous, and prone to
 formatting errors and inconsistencies.
 
 ## Link
-<To be configured>
+!To be configured
 
 ## License
 This project is licensed under MIT License.
