@@ -5,6 +5,8 @@ I previously made these using PowerPoint and it was slow, arduous, and prone to
 formatting errors and inconsistencies.
 
 **Currently, the site is not up and running as I will rewrite the entire thing to work off Jekyll.**
+Since this a server-side app built on Node.js, I have to turn this into static html to publish on pages.
+Coming soon:tm:
 
 ## Link
 !To be configured
